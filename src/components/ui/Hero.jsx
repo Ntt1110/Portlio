@@ -6,7 +6,7 @@ export default function Hero() {
 
   const handleDownloadCV = () => {
     const link = document.createElement('a');
-    link.href = '/Trung-Nguyen-TopCV.vn-250826.150350.pdf';
+    link.href = '/Trung-Nguyen-TopCV.vn-250826.171250.pdf';
     link.download = 'Nguen_Thanh_Trung_Software_Developer_CV.pdf'; 
     document.body.appendChild(link);
     link.click();
