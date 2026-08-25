@@ -1,0 +1,63 @@
+/* src/components/ui/Header.module.css */
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  pointer-events: auto; /* Cho phép click vào các nút trên header */
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: white;
+  letter-spacing: -0.025em;
+  cursor: pointer;
+}
+
+.dot {
+  color: #6366f1; /* Dấu chấm màu tím đồng bộ với nút bấm */
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navLink {
+   padding: 0.5rem 1.25rem;
+  background-color: transparent;
+  color: #a5b4fc;
+  border: 1px solid #6366f1;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navLink:hover {
+  color: #ffffff;
+}
+
+.contactBtn {
+  padding: 0.5rem 1.25rem;
+  background-color: transparent;
+  color: #a5b4fc;
+  border: 1px solid #6366f1;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contactBtn:hover {
+  background-color: rgba(79, 70, 229, 0.15);
+  border-color: #818cf8;
+  color: #ffffff;
+  box-shadow: 0 0 15px rgba(129, 140, 248, 0.3);
+  transform: translateY(-1px);
+}

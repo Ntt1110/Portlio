@@ -1,0 +1,102 @@
+.projectsContainer {
+  width: 100%;
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+  pointer-events: auto;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.highlightText {
+  background-image: linear-gradient(to right, #818cf8, #22d3ee);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: rgba(255, 255, 255, 0.07);
+  border-color: rgba(129, 140, 248, 0.5);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(79, 70, 229, 0.2);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.categoryTag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #818cf8;
+  background-color: rgba(129, 140, 248, 0.1);
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+}
+
+.projectTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.75rem;
+}
+
+.description {
+  font-size: 0.875rem;
+  color: #94a3b8;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.techList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.techTag {
+  font-size: 0.75rem;
+  color: #cbd5e1;
+  background-color: rgba(30, 41, 59, 0.7);
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.375rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}

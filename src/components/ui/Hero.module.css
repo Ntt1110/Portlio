@@ -1,0 +1,109 @@
+/* src/components/ui/Hero.module.css */
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  max-width: 48rem;
+  pointer-events: auto;
+  /* Thêm padding left để chữ không dính sát viền trên màn hình nhỏ */
+  padding-left: 1rem; 
+}
+
+.greeting {
+  color: #818cf8;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: white;
+  line-height: 1.1; /* Thu nhỏ line-height để các dòng gần nhau hơn */
+  margin-bottom: 1.5rem;
+  /* Đảm bảo flex để "Aspiring" và phần gradient nằm cùng một cụm */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Thêm một class riêng cho chữ "Aspiring" để dễ quản lý */
+.titlePrefix {
+  display: block;
+}
+
+.highlight {
+  background-image: linear-gradient(to right, #818cf8, #22d3ee);
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block; /* Quan trọng để gradient text hoạt động tốt */
+}
+
+.description {
+  color: #94a3b8;
+  font-size: 1.125rem;
+  line-height: 1.75;
+  margin-bottom: 2.5rem;
+  max-width: 38rem; /* Giới hạn độ rộng đoạn text để dễ đọc hơn */
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+
+.primaryButton, .secondaryButton {
+  padding: 0.875rem 2.5rem;
+  background-color: transparent;
+  color: #a5b4fc;
+  border-radius: 9999px;
+  font-weight: 600;
+  border: 1px solid #6366f1;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Khi di chuột vào nút Khám phá dự án: Sáng rực hẳn lên thành màu đặc */
+.primaryButton:hover {
+  background-color: #4f46e5;
+  color: white;
+  box-shadow: 0 0 25px rgba(79, 70, 229, 0.8);
+  border-color: #818cf8;
+  transform: translateY(-2px);
+}
+
+/* Khi di chuột vào nút Tải CV: Sáng lên theo kiểu khác chút hoặc tương tự */
+.secondaryButton:hover {
+  background-color: rgba(99, 102, 241, 0.2);
+  color: white;
+  border-color: #818cf8;
+  box-shadow: 0 0 20px rgba(129, 140, 248, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Trạng thái sau khi bấm tải CV thành công */
+.downloadedButton {
+  background-color: #059669 !important;
+  border-color: #059669 !important;
+  color: white !important;
+  box-shadow: 0 0 20px rgba(5, 150, 105, 0.6) !important;
+}
+
+
+
+/* Responsive cho Desktop */
+@media (min-width: 768px) {
+  .heroContainer {
+    padding-left: 0;
+  }
+  .title {
+    font-size: 4.5rem;
+  }
+  .greeting, .description {
+    font-size: 1.25rem;
+  }
+}

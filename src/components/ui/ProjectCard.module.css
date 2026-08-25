@@ -1,0 +1,45 @@
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  pointer-events: auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.projectsContainer {
+  width: 100%;
+  max-width: 64rem;
+  margin: 4rem auto 0 auto; /* Đẩy cách phần trên ra một khoảng */
+  padding: 4rem 1.5rem;
+  pointer-events: auto;
+}
+.title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+.category {
+  font-size: 0.875rem;
+  color: #cbd5e1; /* slate-300 */
+  margin-top: 0.25rem;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .card {
+    padding: 1.5rem;
+  }
+  .title {
+    font-size: 1.25rem;
+  }
+}
